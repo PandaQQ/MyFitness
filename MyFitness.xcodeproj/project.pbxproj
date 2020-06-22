@@ -140,6 +140,8 @@
 		0FED06CD21C7963C000D41AC /* MKDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED06CB21C7963C000D41AC /* MKDropdownMenu.m */; };
 		0FED06CF21C7C07E000D41AC /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED06CE21C7C07E000D41AC /* DropDownMenu.swift */; };
 		1D71F247864DED889DD73337 /* Pods_MyFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813B8380172CDC392FFEE040 /* Pods_MyFitness.framework */; };
+		2D7DE07E24A093FD005ED02B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7DE07D24A093FD005ED02B /* Accelerate.framework */; };
+		2D7DE08024A09412005ED02B /* libBaiduSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7DE07F24A09412005ED02B /* libBaiduSpeechSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -412,6 +414,8 @@
 		0FED06CB21C7963C000D41AC /* MKDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDropdownMenu.m; sourceTree = "<group>"; };
 		0FED06CC21C7963C000D41AC /* MKDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDropdownMenu.h; sourceTree = "<group>"; };
 		0FED06CE21C7C07E000D41AC /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
+		2D7DE07D24A093FD005ED02B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2D7DE07F24A09412005ED02B /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
 		59F9445866E2F2A94B5B1C20 /* Pods-MyFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitness.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitness/Pods-MyFitness.release.xcconfig"; sourceTree = "<group>"; };
 		813B8380172CDC392FFEE040 /* Pods_MyFitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDD294776D9E4C7A886FEFC /* Pods-MyFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitness/Pods-MyFitness.debug.xcconfig"; sourceTree = "<group>"; };
@@ -423,9 +427,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F2FAAE621EC240C00E6BB83 /* libBaiduSpeechSDK.a in Frameworks */,
+				2D7DE07E24A093FD005ED02B /* Accelerate.framework in Frameworks */,
 				0F2FAABB21EC213F00E6BB83 /* libz.1.2.5.tbd in Frameworks */,
 				0F2FAAB921EC212700E6BB83 /* libc++.tbd in Frameworks */,
 				0F2FAAB721EC210E00E6BB83 /* libiconv.2.4.0.tbd in Frameworks */,
+				2D7DE08024A09412005ED02B /* libBaiduSpeechSDK.a in Frameworks */,
 				0F2FAAB521EC20FD00E6BB83 /* libsqlite3.0.tbd in Frameworks */,
 				1D71F247864DED889DD73337 /* Pods_MyFitness.framework in Frameworks */,
 				0F2AB59121BDF99F006FB503 /* BaiduTraceSDK.framework in Frameworks */,
@@ -718,6 +724,7 @@
 		0F2FAABC21EC217A00E6BB83 /* BDSClientLib */ = {
 			isa = PBXGroup;
 			children = (
+				2D7DE07F24A09412005ED02B /* libBaiduSpeechSDK.a */,
 			);
 			path = BDSClientLib;
 			sourceTree = "<group>";
@@ -905,6 +912,7 @@
 		ADCE325A1E6387576528670D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D7DE07D24A093FD005ED02B /* Accelerate.framework */,
 				0F2FAABD21EC221E00E6BB83 /* libBaiduSpeechSDK.a */,
 				0F2FAABA21EC213F00E6BB83 /* libz.1.2.5.tbd */,
 				0F2FAAB821EC212700E6BB83 /* libc++.tbd */,
@@ -1041,11 +1049,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyFitness/Pods-MyFitness-resources.sh",
-				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1355,7 +1361,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7BDFJY5WEJ;
+				DEVELOPMENT_TEAM = 82F3TLZDER;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1389,7 +1395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7BDFJY5WEJ;
+				DEVELOPMENT_TEAM = 82F3TLZDER;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
